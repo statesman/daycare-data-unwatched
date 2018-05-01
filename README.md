@@ -15,3 +15,8 @@ as they were on Feb. 1, 2018. These files are used for analysis.
 ### Filtering possible injuries
 
 The notebook at `notebooks/data_warehouse_export.ipynb` filters the DFPS data for review of possible injuries. The resulting dataset is imported into the [daycare-injuries](https://github.com/statesman/data-warehouse/tree/master/daycare_injuries) data warehouse app with a management command.
+
+### Additional analysis
+
+`notebooks/abuse_punishment.ipynb` queries Feb. 1 data for violations involving abuse and punishment.
+`notebooks/100violations.ipynb` examines Feb. 1 and live data for operations with at least 100 violations of any severity level.
