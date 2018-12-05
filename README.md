@@ -1,22 +1,19 @@
-# Daycare analysis
+# Day care data and analysis
 
-This repo contains data and python scripts for working with daycare violation data outside of data warehouse. The notebooks run in a default conda environment.
+Data related to an Austin American-Statesman [investigation](http://gatehousenews.com/unwatched/overview/site/statesman.com/) into the safety of Texas day cares. Data were provided by the Texas Department of Family and Protective Services or Texas Health and Human Services Commission unless otherwise noted.
 
-### Raw data
+### Database files
 
-The `csv/dfps-2018-02-01/` directory contains the raw files DFPS tables for
-- [non-compliance](https://data.texas.gov/Social-Services/DFPS-CCL-Non-Compliance-Data/tqgd-mf4x)
-- [operations](https://data.texas.gov/Social-Services/DFPS-CCL-Daycare-and-Residential-Operations-Data/bc5r-88dy)
-- [standards](https://data.texas.gov/Social-Services/DFPS-CCL-Sections-and-Standards-Evaluated-Data/ywgb-2ig8/)
-- [assessment](https://data.texas.gov/Social-Services/DFPS-CCL-Inspection-Investigation-Assessment-Data/m5q4-3y3d)
+Download the [abuse and neglect](database/abuse.csv), [injury](database/injuries.csv) and [prohibited punishment](punishment.csv) records used in the [Unwatched database](http://gatehousenews.com/unwatched/guide/).
 
-as they were on Feb. 1, 2018. These files are used for analysis.
+### Analysis
 
-### Filtering possible injuries
+The [`notebooks`](notebooks/) directory contains Python notebooks that analyze data from the [`src`](src/) directory. The notebooks can be executed in a default [Conda](https://conda.io/docs/index.html) environment.
 
-The notebook at `notebooks/data_warehouse_export.ipynb` filters the DFPS data for review of possible injuries. The resulting dataset is imported into the [daycare-injuries](https://github.com/statesman/data-warehouse/tree/master/daycare_injuries) data warehouse app with a management command.
+### Contact
 
-### Additional analysis
+Dan Keemahill, [dkeemahill@statesman.com](dkeemahill@statesman.com)
 
-`notebooks/abuse_punishment.ipynb` queries Feb. 1 data for violations involving abuse and punishment.
-`notebooks/100violations.ipynb` examines Feb. 1 and live data for operations with at least 100 violations of any severity level.
+### Licensing
+
+All code in this repository is available under the [MIT License](https://opensource.org/licenses/MIT). The data files are available under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0) license.
