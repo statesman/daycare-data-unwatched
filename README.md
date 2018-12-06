@@ -4,7 +4,7 @@ Data related to an Austin American-Statesman [investigation](http://gatehousenew
 
 ### Database files
 
-Download the [abuse and neglect](database/abuse.csv), [injury](database/injuries.csv) and [prohibited punishment](punishment.csv) records used in the [Unwatched database](http://gatehousenews.com/unwatched/guide/).
+Download the [abuse and neglect](database/abuse.csv), [injury](database/injuries.csv) and [prohibited punishment](database/punishment.csv) records used in the [Unwatched database](http://gatehousenews.com/unwatched/guide/).
 
 ### Analysis
 
